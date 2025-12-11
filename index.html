@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionForge Studios</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #ff4b2b, #ff416c);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffe600;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('https://picsum.photos/1600/900?blur') no-repeat center center/cover;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #ffe600;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* Sections */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #ff416c;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      width: 250px;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background: #292929;
+    }
+    .card span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h2 { font-size: 2rem; }
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>VisionForge Studios</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>Crafting Creativity, Powering Innovation</h2>
+    <p>Your one-stop solution for video editing, image design, app development, and YouTube growth.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><span>🎬</span> Video Editing</div>
+      <div class="card"><span>🖼️</span> Image Editing</div>
+      <div class="card"><span>🎨</span> Thumbnail Design</div>
+      <div class="card"><span>📱</span> App Development</div>
+      <div class="card"><span>📺</span> YouTube Channel Management</div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Showcase your best projects here with images or videos.</p>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At VisionForge Studios, we transform ideas into reality. With expertise in digital creativity, we help businesses and creators shine online.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@visionforge.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 VisionForge Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

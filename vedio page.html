@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editing Services | VisionForge Studios</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.15), rgba(0,0,0,0.9));
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 0 0 12px rgba(255,255,255,0.7);
+      animation: glow 3s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(255,255,255,0.4); }
+      to { text-shadow: 0 0 25px rgba(255,255,255,0.9); }
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.03);
+      margin: 20px;
+      border-radius: 12px;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    .softwares, .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(15px);
+      padding: 25px;
+      border-radius: 12px;
+      width: 250px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.3);
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    footer {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 Video Editing Services</h1>
+  </header>
+
+  <section class="section">
+    <h2>Why Choose VisionForge Studios?</h2>
+    <p>We transform raw footage into cinematic experiences. From YouTube content to corporate films, our editing blends creativity with precision. Clients trust us for professional storytelling, smooth transitions, and engaging visuals.</p>
+  </section>
+
+  <section class="section">
+    <h2>Top Editing Software We Use</h2>
+    <div class="softwares">
+      <div class="card">Adobe Premiere Pro</div>
+      <div class="card">Final Cut Pro</div>
+      <div class="card">DaVinci Resolve</div>
+      <div class="card">Filmora</div>
+      <div class="card">Sony Vegas Pro</div>
+      <div class="card">HitFilm Express</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Services for Clients</h2>
+    <div class="services">
+      <div class="card">YouTube Video Polishing</div>
+      <div class="card">Corporate & Promotional Films</div>
+      <div class="card">Wedding & Event Highlights</div>
+      <div class="card">Cinematic Short Films</div>
+      <div class="card">Social Media Reels & Shorts</div>
+      <div class="card">Gaming & Vlogs Editing</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Client Benefits</h2>
+    <p>✔ Fast delivery & unlimited revisions<br>
+       ✔ Affordable packages tailored to your needs<br>
+       ✔ Professional color grading & sound design<br>
+       ✔ Dedicated support for creators & businesses</p>
+  </section>
+
+  <footer>
+    <p>© 2025 VisionForge Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -10,14 +10,25 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #0f0f0f;
-      color: #fff;
-      line-height: 1.6;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.2), rgba(0,0,0,0.9));
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    /* Smooth fade-in animation */
+    section, header, footer {
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Header */
     header {
-      background: linear-gradient(90deg, #ff4b2b, #ff416c);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
       padding: 20px;
       text-align: center;
       position: sticky;
@@ -26,21 +37,22 @@
     }
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+      margin-top: 10px;
     }
     nav a {
-      color: #fff;
+      color: #ccc;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
+      transition: color 0.3s, text-shadow 0.3s;
     }
     nav a:hover {
-      color: #ffe600;
+      color: #fff;
+      text-shadow: 0 0 8px rgba(255,255,255,0.8);
     }
 
     /* Hero Section */
@@ -50,32 +62,41 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: url('https://picsum.photos/1600/900?blur') no-repeat center center/cover;
       text-align: center;
-      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(20px);
     }
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 20px;
-      color: #ffe600;
+      color: #fff;
+      text-shadow: 0 0 15px rgba(255,255,255,0.7);
+      animation: glow 3s infinite alternate;
     }
     .hero p {
       font-size: 1.2rem;
       max-width: 700px;
-      background: rgba(0,0,0,0.6);
-      padding: 15px;
-      border-radius: 10px;
+      color: #ccc;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(255,255,255,0.4); }
+      to { text-shadow: 0 0 25px rgba(255,255,255,0.9); }
     }
 
     /* Sections */
     .section {
       padding: 60px 20px;
       text-align: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.03);
+      margin: 20px;
+      border-radius: 12px;
     }
     .section h2 {
       font-size: 2rem;
       margin-bottom: 30px;
-      color: #ff416c;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
 
     /* Services */
@@ -86,36 +107,50 @@
       gap: 20px;
     }
     .card {
-      background: #1f1f1f;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(15px);
       padding: 30px;
       border-radius: 12px;
       width: 250px;
-      transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: transform 0.4s, box-shadow 0.4s;
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
     }
     .card:hover {
-      transform: translateY(-10px);
-      background: #292929;
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.3);
     }
     .card span {
       font-size: 2rem;
       display: block;
       margin-bottom: 10px;
+      color: #fff;
     }
 
     /* Contact */
     .contact p {
       font-size: 1.1rem;
       margin: 10px 0;
+      color: #ccc;
     }
 
     /* Footer */
     footer {
-      background: #111;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
       padding: 20px;
       text-align: center;
       font-size: 0.9rem;
       color: #aaa;
+    }
+
+    /* Floating animation for cards */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+    .card {
+      animation: float 6s ease-in-out infinite;
     }
 
     /* Responsive */
@@ -171,13 +206,14 @@
   <!-- Contact -->
   <section class="section contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@visionforge.com</p>
-    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>Email: rishabhchaudhary179@gmail.com</p>
+    <p>Phone: +91-79XXXXXX59</p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 VisionForge Studios. All Rights Reserved.</p>
+    <p>Owner Rishabh Chaudhary </p>
   </footer>
 </body>
 </html>
